@@ -1,26 +1,25 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import React from "react";
+import "./App.scss";
+import Suv from "./component/Suv";
+import Sedan from "./component/Sedan";
+import Luxury from "./component/Luxury";
+import CardWrapper from "./component/CardWrapper";
+import Footer from "./component/Footer";
+import MainWrapper from "./component/MainWrapper";
 
-function App() {
+const App = () => {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className="app">
+      <MainWrapper>
+        <CardWrapper>
+          <Sedan />
+          <Suv />
+          <Luxury />
+        </CardWrapper>
+      </MainWrapper>
+      <Footer />
     </div>
   );
-}
+};
 
 export default App;

@@ -1,0 +1,16 @@
+@import "../../style/main";
+
+.footer {
+  position: fixed;
+  left: 0;
+  bottom: 20px;
+  width: 100%;
+  font-size: $font-size-paragraph;
+  text-align: center;
+  color: $dark-cyan;
+
+  & a {
+    color: $very-dark-cyan;
+    $font-family: $font-text;
+  }
+}
