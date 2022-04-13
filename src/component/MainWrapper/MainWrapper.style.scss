@@ -6,3 +6,9 @@
   justify-content: center;
   height: 100vh;
 }
+
+@media only screen and (max-width: 375px) {
+  .main-wrapper {
+    height: 250vh;
+  }
+}

@@ -1,26 +1,7 @@
 @import "../../style/main";
 
-.luxury {
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  justify-content: center;
-  background-color: $very-dark-cyan;
-  padding: 40px 40px;
-  width: 20vw;
-  height: 60vh;
+@include car-type-card("luxury", $very-dark-cyan, 10px, 0, 10px, 10px, 0);
 
-  &-title {
-    color: $very-light-gray;
-    font-family: $font-title;
-    font-size: $font-size-title;
-    text-transform: uppercase;
-  }
-
-  &-paragraph {
-    color: $transparent-white;
-    font-family: $font-text;
-    font-size: $font-size-paragraph;
-    text-align: left;
-  }
+@media only screen and (max-width: 375px) {
+  @include car-type-card("luxury", $very-dark-cyan, 10px, 0, 0, 10px, 10px);
 }

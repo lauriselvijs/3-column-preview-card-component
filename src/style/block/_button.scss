@@ -1,0 +1,23 @@
+@mixin btn($class-name, $clicked: false) {
+  .#{$class-name} {
+    width: 150px;
+    height: 45px;
+    border-radius: 50px;
+    font-family: $font-text;
+    font-size: $font-size-paragraph;
+    border: if($clicked, none, 2px solid $very-light-gray);
+    background-color: if($clicked, $very-light-gray, rgba(0, 0, 0, 0));
+    mix-blend-mode: if($clicked, lighten, none);
+    color: if($clicked, none, $very-light-gray);
+    // color: if($clicked, rgba(0, 0, 0, 0), $very-light-gray);
+
+    &:hover {
+      transform: scale(1.1);
+      cursor: pointer;
+    }
+
+    &:active {
+      transform: translate(2px);
+    }
+  }
+}

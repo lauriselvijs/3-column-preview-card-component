@@ -1,1 +1,7 @@
 @import "../../style/main";
+
+@include car-type-card("sedan", $bright-orange, 10px, 10px, 0, 0, 10px);
+
+@media only screen and (max-width: 375px) {
+  @include car-type-card("sedan", $bright-orange, 10px, 10px, 10px, 0, 0);
+}

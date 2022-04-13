@@ -1,13 +1,27 @@
-import React from "react";
+import React, { useState } from "react";
+import "./Suv.style.scss";
+import IconSuvs from "../../asset/image/icon/icon-suvs.svg";
+import LearnMoreBtn from "../LearnMoreBtn";
 
 const Suv = () => {
+  const [learnMoreClicked, setLearnMoreClicked] = useState<boolean>(false);
+
+  const onLearnMoreBtnClick = (): void => {
+    setLearnMoreClicked(!learnMoreClicked);
+  };
+
   return (
     <section className="suv">
-      <h1>SUVs</h1>
-      <p>
+      <img src={IconSuvs} alt="Suv" className="icon-suvs" />
+      <h1 className="suv-title">SUVs</h1>
+      <p className="suv-paragraph">
         Take an SUV for its spacious interior, power, and versatility. Perfect
         for your next family vacation and off-road adventures.
       </p>
+      <LearnMoreBtn
+        learnMoreClicked={learnMoreClicked}
+        onLearnMoreBtnClick={onLearnMoreBtnClick}
+      />
     </section>
   );
 };

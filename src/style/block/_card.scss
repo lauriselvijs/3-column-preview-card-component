@@ -1,2 +1,46 @@
-@mixin card {
+@mixin car-type-card(
+  $class-name,
+  $bg-color,
+  $border-hover: 0px,
+  $border-radius-tl: 0px,
+  $border-radius-tr: 0px,
+  $border-radius-br: 0px,
+  $border-radius-bl: 0px
+) {
+  .#{$class-name} {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    background-color: $bg-color;
+    padding: 40px 40px;
+    width: 210px;
+    height: 400px;
+
+    border-radius: $border-radius-tl $border-radius-tr $border-radius-br
+      $border-radius-bl;
+
+    &-title {
+      color: $very-light-gray;
+      font-family: $font-title;
+      font-size: $font-size-title;
+      text-transform: uppercase;
+      margin-bottom: 0px;
+    }
+
+    &-paragraph {
+      color: $transparent-white;
+      font-family: $font-text;
+      font-size: $font-size-paragraph;
+      text-align: left;
+      line-height: 1.8;
+      margin-bottom: 75px;
+    }
+
+    &:hover {
+      border-radius: $border-hover;
+      transform: scale(1.1);
+      cursor: default;
+    }
+  }
 }
