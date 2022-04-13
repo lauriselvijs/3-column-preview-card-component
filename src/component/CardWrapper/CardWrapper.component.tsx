@@ -3,7 +3,7 @@ import { IWrapperProps } from "../../type-definition/Wrapper";
 import "./CardWrapper.style.scss";
 
 const CardWrapper = ({ children }: IWrapperProps) => {
-  return <section className="card-wrapper">{children}</section>;
+  return <div className="card-wrapper">{children}</div>;
 };
 
 export default CardWrapper;
