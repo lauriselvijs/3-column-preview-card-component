@@ -13,7 +13,7 @@ const Suv = () => {
   return (
     <section className="suv">
       <img src={IconSuvs} alt="Suv" className="icon-suvs" />
-      <h1 className="suv-title">SUVs</h1>
+      <h2 className="suv-title">SUVs</h2>
       <p className="suv-paragraph">
         Take an SUV for its spacious interior, power, and versatility. Perfect
         for your next family vacation and off-road adventures.

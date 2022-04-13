@@ -13,7 +13,7 @@ const Sedan = () => {
   return (
     <section className="sedan">
       <img src={IconSedans} alt="Sedan" className="icon-sedans" />
-      <h1 className="sedan-title">Sedan</h1>
+      <h2 className="sedan-title">Sedan</h2>
       <p className="sedan-paragraph">
         Choose a sedan for its affordability and excellent fuel economy. Ideal
         for cruising in the city or on your next road trip.

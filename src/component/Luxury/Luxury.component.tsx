@@ -13,7 +13,7 @@ const Luxury = () => {
   return (
     <section className="luxury">
       <img src={IconLuxury} alt="Luxury car" className="icon-luxury" />
-      <h1 className="luxury-title">Luxury</h1>
+      <h2 className="luxury-title">Luxury</h2>
       <p className="luxury-paragraph">
         Cruise in the best car brands without the bloated prices. Enjoy the
         enhanced comfort of a luxury rental and arrive in style.
