@@ -53,6 +53,54 @@ Users should be able to:
 
 ### What I learned
 
+Using render props to implement DRY approach
+
+```js
+  <MainWrapper>
+        <LearnMoreClickedWrapper
+          render={(learnMoreClicked, onLearnMoreBtnClick) => (
+            <Sedan
+              learnMoreClicked={learnMoreClicked}
+              onLearnMoreBtnClick={onLearnMoreBtnClick}
+            />
+          )}
+        />
+        <LearnMoreClickedWrapper
+          render={(learnMoreClicked, onLearnMoreBtnClick) => (
+            <Suv
+              learnMoreClicked={learnMoreClicked}
+              onLearnMoreBtnClick={onLearnMoreBtnClick}
+            />
+          )}
+        />
+        <LearnMoreClickedWrapper
+          render={(learnMoreClicked, onLearnMoreBtnClick) => (
+            <Luxury
+              learnMoreClicked={learnMoreClicked}
+              onLearnMoreBtnClick={onLearnMoreBtnClick}
+            />
+          )}
+        />
+      </MainWrapper>
+```
+
+```js
+  const LearnMoreClickedWrapper = ({ render }: ILearnMoreClickedWrapper) => {
+  const [learnMoreClicked, setLearnMoreClicked] = useState<boolean>(false);
+
+  const onLearnMoreBtnClick = (): void => {
+    setLearnMoreClicked(!learnMoreClicked);
+  };
+
+  return (
+    <div className="learn-more-clicked-wrapper">
+      {render(learnMoreClicked, onLearnMoreBtnClick)}
+    </div>
+  );
+};
+```
+
+
 ### Continued development
 
 Learning more about SCSS and using it in future projects
