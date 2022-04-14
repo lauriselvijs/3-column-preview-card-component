@@ -1,14 +1,8 @@
-import React, { ReactNode, useState } from "react";
+import React, { useState } from "react";
 import "./LearnMoreClickedWrapper.style.scss";
+import { ILearnMoreClickedWrapper } from "../../type-definition/LearnMore";
 
-const LearnMoreClickedWrapper = ({
-  render,
-}: {
-  render: (
-    learnMoreClicked: boolean,
-    setLearnMoreClicked: () => void
-  ) => ReactNode;
-}) => {
+const LearnMoreClickedWrapper = ({ render }: ILearnMoreClickedWrapper) => {
   const [learnMoreClicked, setLearnMoreClicked] = useState<boolean>(false);
 
   const onLearnMoreBtnClick = (): void => {
