@@ -1,15 +1,13 @@
-import React, { useState } from "react";
+import React from "react";
 import "./Luxury.style.scss";
 import IconLuxury from "../../asset/image/icon/icon-luxury.svg";
 import LearnMoreBtn from "../LearnMoreBtn";
+import { ILearnMoreClickedPropRender } from "../../type-definition/LearnMore";
 
-const Luxury = () => {
-  const [learnMoreClicked, setLearnMoreClicked] = useState<boolean>(false);
-
-  const onLearnMoreBtnClick = (): void => {
-    setLearnMoreClicked(!learnMoreClicked);
-  };
-
+const Luxury = ({
+  learnMoreClicked,
+  onLearnMoreBtnClick,
+}: ILearnMoreClickedPropRender) => {
   return (
     <section className="luxury">
       <img src={IconLuxury} alt="Luxury car" className="icon-luxury" />

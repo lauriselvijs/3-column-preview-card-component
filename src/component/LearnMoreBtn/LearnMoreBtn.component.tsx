@@ -1,7 +1,7 @@
 import React from "react";
 import "./LearnMoreBtn.style.scss";
 import PropTypes from "prop-types";
-import { ILearnMoreBtn } from "./LearnMoreBtn";
+import { ILearnMoreBtn } from "../../type-definition/LearnMore";
 
 const LearnMoreBtn = ({
   learnMoreBtnName,

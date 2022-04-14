@@ -1,15 +1,13 @@
-import React, { useState } from "react";
+import React from "react";
 import "./Suv.style.scss";
 import IconSuvs from "../../asset/image/icon/icon-suvs.svg";
 import LearnMoreBtn from "../LearnMoreBtn";
+import { ILearnMoreClickedPropRender } from "../../type-definition/LearnMore";
 
-const Suv = () => {
-  const [learnMoreClicked, setLearnMoreClicked] = useState<boolean>(false);
-
-  const onLearnMoreBtnClick = (): void => {
-    setLearnMoreClicked(!learnMoreClicked);
-  };
-
+const Suv = ({
+  learnMoreClicked,
+  onLearnMoreBtnClick,
+}: ILearnMoreClickedPropRender) => {
   return (
     <section className="suv">
       <img src={IconSuvs} alt="Suv" className="icon-suvs" />

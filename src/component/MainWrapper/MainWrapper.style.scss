@@ -10,5 +10,9 @@
 @media only screen and (max-width: 375px) {
   .main-wrapper {
     height: 250vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
   }
 }
