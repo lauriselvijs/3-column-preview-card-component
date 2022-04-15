@@ -1,1 +1,12 @@
 @import "../../style/main";
+
+.dark-mode-btn {
+  left: 200px;
+  width: 100px;
+  height: 50px;
+  border-radius: 50px;
+  border: none;
+  background-color: $very-light-gray;
+  margin: 25px;
+  font-size: $font-size-title;
+}

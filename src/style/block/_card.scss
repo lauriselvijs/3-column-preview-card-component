@@ -5,14 +5,15 @@
   $border-radius-tl: 0px,
   $border-radius-tr: 0px,
   $border-radius-br: 0px,
-  $border-radius-bl: 0px
+  $border-radius-bl: 0px,
+  $dark-mode: false
 ) {
   .#{$class-name} {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
     justify-content: flex-start;
-    background-color: $bg-color;
+    background-color: if($dark-mode, grayscale($bg-color), $bg-color);
     padding: 40px 40px;
     width: 210px;
     height: 400px;

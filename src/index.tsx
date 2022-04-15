@@ -1,11 +1,13 @@
 import React from "react";
 import { render } from "react-dom";
-import "./index.scss";
-import App from "./App";
+import App from "./component/App";
+import DarkModeProvider from "./store/DarkMode/DarkMode.provider";
 
 render(
   <React.StrictMode>
-    <App />
+    <DarkModeProvider>
+      <App />
+    </DarkModeProvider>
   </React.StrictMode>,
   document.getElementById("root")
 );

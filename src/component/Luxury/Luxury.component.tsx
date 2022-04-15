@@ -3,13 +3,16 @@ import "./Luxury.style.scss";
 import IconLuxury from "../../asset/image/icon/icon-luxury.svg";
 import LearnMoreBtn from "../LearnMoreBtn";
 import { ILearnMoreClickedPropRender } from "../../type-definition/LearnMore";
+import { useDarkModeContext } from "../../store/DarkMode/DarkMode.context-creator";
 
 const Luxury = ({
   learnMoreClicked,
   onLearnMoreBtnClick,
 }: ILearnMoreClickedPropRender) => {
+  const { darkMode } = useDarkModeContext();
+
   return (
-    <section className="luxury">
+    <section className={darkMode ? "dark-mode-luxury" : "luxury"}>
       <img src={IconLuxury} alt="Luxury car" className="icon-luxury" />
       <h2 className="luxury-title">Luxury</h2>
       <p className="luxury-paragraph">

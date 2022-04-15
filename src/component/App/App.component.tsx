@@ -1,15 +1,18 @@
 import React from "react";
-import "./App.scss";
-import Suv from "./component/Suv";
-import Sedan from "./component/Sedan";
-import Luxury from "./component/Luxury";
-import Footer from "./component/Footer";
-import MainWrapper from "./component/MainWrapper";
-import LearnMoreClickedWrapper from "./component/LearnMoreClickedWrapper";
+import "./App.style.scss";
+import Suv from "../Suv";
+import Sedan from "../Sedan";
+import Luxury from "../Luxury";
+import Footer from "../Footer";
+import MainWrapper from "../MainWrapper";
+import LearnMoreClickedWrapper from "../LearnMoreClickedWrapper";
+import DarkModeBtn from "../DarkModeBtn";
 
 const App = () => {
   return (
     <div className="app">
+      <DarkModeBtn />
+
       <MainWrapper>
         <LearnMoreClickedWrapper
           render={(learnMoreClicked, onLearnMoreBtnClick) => (

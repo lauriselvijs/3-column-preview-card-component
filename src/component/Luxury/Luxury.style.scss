@@ -1,7 +1,27 @@
 @import "../../style/main";
 
 @include car-type-card("luxury", $very-dark-cyan, 10px, 0, 10px, 10px, 0);
+@include car-type-card(
+  "dark-mode-luxury",
+  $very-dark-cyan,
+  10px,
+  0,
+  10px,
+  10px,
+  0,
+  true
+);
 
 @media only screen and (max-width: 375px) {
   @include car-type-card("luxury", $very-dark-cyan, 10px, 0, 0, 10px, 10px);
+  @include car-type-card(
+    "dark-mode-luxury",
+    $very-dark-cyan,
+    10px,
+    0,
+    10px,
+    10px,
+    0,
+    true
+  );
 }

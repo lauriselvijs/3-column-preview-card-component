@@ -1,3 +1,13 @@
 @import "../../style/main";
 
 @include car-type-card("suv", $dark-cyan, 10px);
+@include car-type-card(
+  "dark-mode-suv",
+  $very-dark-cyan,
+  10px,
+  0,
+  10px,
+  10px,
+  0,
+  true
+);

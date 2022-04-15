@@ -9,7 +9,6 @@
     background-color: if($clicked, $very-light-gray, rgba(0, 0, 0, 0));
     mix-blend-mode: if($clicked, lighten, none);
     color: if($clicked, none, $very-light-gray);
-    // color: if($clicked, rgba(0, 0, 0, 0), $very-light-gray);
 
     &:hover {
       transform: scale(1.1);
