@@ -13,7 +13,6 @@ const DarkModeReducer = (
         ...state,
         darkMode: !state.darkMode,
       };
-
     default:
       return state;
   }
