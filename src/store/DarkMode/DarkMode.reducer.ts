@@ -18,5 +18,4 @@ const DarkModeReducer = (
   }
 };
 
-
 export default DarkModeReducer;
