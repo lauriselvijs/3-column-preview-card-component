@@ -18,6 +18,5 @@ const DarkModeReducer = (
   }
 };
 
-export type DarkModeState = typeof DarkModeInitialState;
 
 export default DarkModeReducer;
