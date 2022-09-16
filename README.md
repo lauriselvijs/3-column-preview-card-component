@@ -10,6 +10,9 @@ This is a solution to the [3-column preview card component challenge on Frontend
     - [The challenge](#the-challenge)
     - [Screenshot](#screenshot)
     - [Links](#links)
+  - [Installation](#installation)
+    - [Steps to Setup](#steps-to-setup)
+    - [Steps to Run](#steps-to-run)
   - [My process](#my-process)
     - [Built with](#built-with)
     - [What I learned](#what-i-learned)
@@ -35,6 +38,17 @@ Users should be able to:
 ![Three cards unchecked mobile](https://user-images.githubusercontent.com/85683069/163214818-e470d051-a5bf-41d0-83ae-d47cf6bf49ae.png)
 
 ![Three cards checked mobile](https://user-images.githubusercontent.com/85683069/163214822-869c4ca0-099c-48b5-aef1-888b77b9a416.png)
+
+## Installation
+
+### Steps to Setup
+
+1. Have node JS installed.
+2. In the project root directory, run <code>npm install</code>
+
+### Steps to Run
+
+1. In the project root directory, run <code>npm run start</code>
 
 ### Links
 
