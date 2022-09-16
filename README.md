@@ -129,5 +129,5 @@ Learning more about SCSS and using it in future projects
 
 ## Author
 
-- Website - [Lauris](https://b2cf56-portfolio-react.netlify.app/projects)
+- Website - [Lauris](https://b2cf56-portfolio.netlify.app/projects)
 - Frontend Mentor - [lauriselvijs](https://www.frontendmentor.io/profile/lauriselvijs)
