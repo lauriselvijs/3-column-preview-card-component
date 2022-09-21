@@ -11,8 +11,6 @@ const DarkModeBtn = () => {
     setDarkMode();
   };
 
-  console.log(darkMode);
-
   return (
     <button className="dark-mode-btn" onClick={onDarkModeBtnClick}>
       {darkMode ? <BsCloudSun /> : <BsCloudMoonFill />}
