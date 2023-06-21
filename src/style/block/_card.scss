@@ -38,9 +38,11 @@
       margin-bottom: 75px;
     }
 
+    transition: transform 0.1s linear;
+
     &:hover {
       border-radius: $border-hover;
-      transform: scale(1.1);
+      transform: scale(1.05);
       cursor: default;
     }
   }
